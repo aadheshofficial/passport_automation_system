@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new user register</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+
+</head>
+<body>
+    <div id="new_user_register_body">
+        <h1>new user register</h1>
+        <div id="new_user_register_content">
+            <form action="register_user" method="POST">
+                <div id="new_user_register_main">
+                    <div id="new_user_register_profile_image">
+                        <img src="{{url_for('static',filename='images/profile_image_default.png')}}">
+                    </div>
+                    <div id="new_user_register_name">
+                        <label>name:</label>
+                        <input type="text" name="new_user_register_name"/>
+                    </div>
+                    <div id="new_user_register_aadharnumber">
+                        <label>aadherNo:</label>
+                        <input type="text" name="new_user_register_aadharnumber"/>
+                    </div>
+                    <div id="new_user_register_phone">
+                        <label>phone:</label>
+                        <input type="text" name="new_user_register_phone"/>
+                    </div>
+                    <div id="new_user_register_email">
+                        <label>email:</label>
+                        <input type="text" name="new_user_register_email"/>
+                    </div>
+                    <div id="new_user_register_address">
+                        <label>address:</label>
+                        <input type="text" name="new_user_register_address"/>
+                    </div>
+                    <div id="new_user_register_fathersname">
+                        <label>father name:</label>
+                        <input type="text" name="new_user_register_fathersname"/>
+                    </div>
+                    <div id="new_user_register_mothername">
+                        <label>mother name:</label>
+                        <input type="text" name="new_user_register_mothername"/>
+                    </div>
+                    <div id="new_user_register_dob">
+                        <label>dob:</label>
+                        <input type="date" name="new_user_register_dob"/>
+                    </div>
+                    <div id="new_user_register_username">
+                        <label>user name:</label>
+                        <input type="text" name="new_user_register_username"/>
+                    </div>
+                    <div id="new_user_register_password">
+                        <lable>password:</lable>
+                        <input type="password" name="new_user_register_password"/>
+                    </div>
+                    <div id="new_user_register_reenter">
+                        <label>reenter:</label>
+                        <input type="text" name="new_user_register_reenter"/>
+                    </div>
+                    <div id="new_user_register_login">
+                        <a href="{{url_for('user_login')}}">login</a>
+                        <input type="submit" value="register" name="new_user_register_login"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

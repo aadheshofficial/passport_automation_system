@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+
+</head>
+<body>
+    <div id="user_login_body">
+        <form action="/login" method="post">
+            <div id="user_login_content">
+                <div id="user_login_main">
+                    <div id="user_login_heading">
+                        <h1>user login</h1>
+                    </div>
+                    <div id="user_login_username">
+                        <label>username:</label>
+                        <input type="text" name="user_login_username"/>
+                    </div>
+                    <div id="user_login_password">
+                        <label>password:</label>
+                        <input type="password" name="user_login_password"/>
+                       
+                    </div>
+                    <div id="user_login_captcha">
+                        <label>captcha:</label>
+                        <input type="text"/>
+                    </div>
+                    <div id="user_login_captcha_number">
+                        <label>1234</label>
+                    </div>
+                    <div id="user_login_loginbutton">
+                        <input id="user_login_button" type="submit" value="login">
+                    </div>
+                    <div id="user_login_register">
+                        <a href="{{url_for('show_register_user_form')}}">register</a>
+                        <a href="{{url_for('forget_password')}}">Forget password:</a>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+        
+
+    </div>
+</body>
+</html>

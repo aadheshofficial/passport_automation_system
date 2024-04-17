@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <div id="make_payment_body">
+        <h1>make payment</h1>
+        <div id="make_payment_content">
+            <div id="make_payment_main">
+                <div id="make_payment_application_id">
+                    <label>application id:</label>
+                    <lable name="make_payment_application_id">auto generated id</lable>
+                    </div>
+                    <div id="make_payment_application_status">
+                        <label>applicathion status: </label>
+                        <label>payment pending</label>
+                    </div>
+                    <div id="make_payment_pay">
+                        <input type="submit" value="pay now"/>
+                        <input type="button" id="make_payment_pay_later" value="pay later" />
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("make_payment_pay_later").addEventListener("click", function() {
+            // Redirect to the desired URL
+            window.location.href = "{{ url_for('home') }}";
+        });
+    </script>
+</body>
+</html>

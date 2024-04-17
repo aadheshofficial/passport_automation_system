@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply passport</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    
+</head>
+<body>
+    <div id="apply_passport_boby">
+        <form action="apply_passport" method="POST">
+            <h1>apply passport</h1>
+        <div id="apply_passport_content">
+                <div id="apply_passport_main">
+                
+                    <div id="apply_passport_profile">
+                        <img src="{{url_for('static',filename='images/profile_image_default.png')}}"/>
+                    </div>
+                    <div id="apply_passport_application_id">
+                        <label>application id:</label>
+                        <label>auto generated</label>
+                    </div>
+                    <div id="apply_passport_name">
+                        <label>name:</label>
+                        <input type="text" name="apply_passport_name" />
+                    </div>
+                    <div id="apply_passport_father_name">
+                        <label>father name:</label>
+                        <input type="text" name="apply_passport_father_name"/>
+                    </div>
+                    <div id="apply_passport_mother_name">
+                        <label>mother name:</label>
+                        <input type="text" name="apply_passport_mother_name"/>
+                    </div>
+                    <div id="apply_passport_dob">
+                        <label>dob:</label>
+                        <input type="date" name="apply_passport_dob"/>
+                    </div>
+                    <div id="apply_passport_phone">
+                        <label>phone:</label>
+                        <input type="text" name="apply_passport_phone"/>
+                    </div>
+                    <div id="apply_passport_adderss">
+                        <label>address:</label>
+                        <input type="text" name="apply_passport_adderss"/>
+                    </div>
+                    <div id="apply_passport_email">
+                        <label>email:</label>
+                        <input type="text" name="apply_passport_email"/>
+                    </div>
+                    <div id="apply_passport_document">
+                        <label id="apply_passport_document_heading">document</label>
+                    </div>
+                    <div id="apply_passport_id_proof">
+                        <select id="apply_passport_id_proof_selector" name="apply_passport_id_proof">
+                            <option value="aadhar_card">aadhar card</option>
+                            <option value="ration_card">ration card</option>
+                            <option value="licence">licence</option>
+                            <option value="voter_id">voter id</option>
+                        </select>
+                        <input type="file" value="upload" name="apply_passport_id_proof_file"/>
+                    </div>
+                    <div id="apply_passport_10th_mark_sheet">
+                        <label>10th mark sheet:</label>
+                        <input type="file" value="upload" name="apply_passport_10th_mark_sheet"/>
+                    </div>
+                    <div id="apply_passport_12th_mark_sheet">
+                        <label>12th mark sheet:</label>
+                        <input type="file" value="upload" name="apply_passport_12th_mark_sheet"/>
+                    </div>
+                    <div id="apply_passport_pan_card">
+                        <label>pan card:</label>
+                        <input type="file" value="upload" name="apply_passport_pan_card"/>
+                    </div>   
+                </div>
+        </div>
+        <div id="apply_passport_button">
+            <input type="submit" id="apply_passport_button_button" value="submit"/>
+        </div>
+        </form>
+        
+
+    </div>  
+</body>
+</html>

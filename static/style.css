@@ -1,0 +1,423 @@
+#user_login_body{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+#user_login_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:50px 15px ;
+    height: 50vh;
+    width: 25vw;
+}
+#user_login_main{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#user_login_username{
+    /* margin: 20px 5px; */
+    display: flex;
+    justify-content: space-between;
+}
+#user_login_password{
+    /* margin: 20px 5px; */
+    display: flex;
+    justify-content: space-between;
+}
+#user_login_captcha{
+     /* margin: 20px 5px; */
+     display: flex;
+     justify-content: space-between;
+}
+#user_login_loginbutton{
+    display: flex;
+    justify-content:center;
+}
+#user_login_register{
+    display: flex;
+    justify-content: space-between;
+}
+#forget_password_body{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#forget_password_nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-top: 20px;
+    gap: 10px;
+    /* float: right; */
+    /* align-items: right; */
+}
+/* #forget_password_login_link{
+    float: right;
+    align-items: right;
+    text-align: right;
+} */
+#forget_password_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:50px 15px ;
+    height: 50vh;
+    width: 25vw;
+    gap: 20px;
+}
+#forget_password_main{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#forget_password_username,#forget_password_reenter{
+    display: flex;
+    justify-content: space-between;
+}
+#forget_password_aadharno,#forget_password_password{
+    display: flex;
+    justify-content: space-between;
+}
+#forget_password_changepassword{
+    display: flex;
+    justify-content: center;
+}
+#change_password_body{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#change_password_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:50px 15px ;
+    height: 50vh;
+    width: 25vw;
+    gap: 20px;
+}
+#change_password_main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#change_password_password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#change_password_newpassword{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#change_password_reenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#change_password_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+#new_user_register_body{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#new_user_register_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:30px 70px 30px ;
+    height: 75vh;
+    width: 45vw;
+    gap: 5px;
+}
+#new_user_register_main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    /* width: 70%; */
+    /* margin-top: 23px ; */
+    gap: 20px;
+}
+#new_user_register_profile_image{
+    display: flex;
+    height: 75px;
+    width: 75px;
+}
+#new_user_register_name,#new_user_register_email,#new_user_register_address,#new_user_register_dob,#new_user_register_username,#new_user_register_password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#new_user_register_aadharnumber,#new_user_register_phone,#new_user_register_fathersname,#new_user_register_mothername,#new_user_register_reenter,#new_user_register_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#apply_passport_boby{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#apply_passport_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:30px 70px 30px ;
+    height: 75vh;
+    width: 45vw;
+    gap: 5px;
+    /* flex-direction: column; */
+}
+#apply_passport_main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    width: 70%;
+    /* margin-top: 23px ; */
+    gap: 20px;
+}
+#apply_passport_profile{
+    display: flex;
+    height: 75px;
+    width: 75px;
+}
+#apply_passport_application_id,#apply_passport_name,#apply_passport_father_name,#apply_passport_mother_name,#apply_passport_dob,#apply_passport_phone,#apply_passport_adderss,#apply_passport_email,#apply_passport_document,#apply_passport_id_proof,#apply_passport_10th_mark_sheet,#apply_passport_12th_mark_sheet,#apply_passport_pan_card,#apply_passport_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#apply_passport_button{
+    margin: 20px;
+}
+#apply_passport_button_button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: blue;
+    font-size: medium;
+    color:white;
+    border: none;
+}
+#apply_passport_document_heading{
+    text-decoration: underline ;
+    font-weight: bold;
+    font-size: large;
+}
+#home_body{
+    display:flex;
+    /* height:100vh; */
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+#home_content{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin-top: 5px;
+
+}
+#home_menu{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid blue; */
+    /* padding-right: 50px; */
+    /* margin-top: 50px; */
+    margin-bottom: 5px ;
+
+}
+#home_profile_image{
+    display: flex;
+    height: 75px;
+    width: 75px;
+}
+#home_image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#home_image img{
+    width: 100%;
+    object-fit: cover;
+}
+#home_main{
+    display: flex;
+    justify-content: space-between;
+
+}
+#user_profile_boby{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#user_profile_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:10px 50px 20px ;
+    height: 75vh;
+    width: 45vw;
+    gap: 5px;
+    /* flex-direction: column; */
+}
+#user_profile_main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    width: 70%;
+    /* margin-top: 23px ; */
+    gap: 20px;
+}
+#user_profile_image_image{
+    height: 75px;
+    width: 75px;
+}
+#user_profile_name,#user_profile_user_name,#user_profile_father_name,#user_profile_mather_name,#user_profile_aadhar,#user_profile_dob,#user_profile_phone,#user_profile_email,#user_profile_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#make_payment_body{
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#make_payment_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:10px 20px 20px ;
+    height: 20vh;
+    width: 45vw;
+    gap: 5px;
+    /* flex-direction: column; */
+}
+#make_payment_main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    width: 70%;
+    /* margin-top: 23px ; */
+    gap: 20px;
+}
+#make_payment_application_id,#make_payment_application_status,#make_payment_pay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#status_result_boby{
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#status_result_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:10px 50px 20px ;
+    height: 20vh;
+    width: 45vw;
+    gap: 5px;
+    /* flex-direction: column; */   
+}
+#status_result_main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    width: 70%;
+    /* margin-top: 23px ; */
+    gap: 20px;
+}
+#status_result_application_id,#status_result_status,#status_result_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#check_status_boby{
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#check_status_content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding:10px 50px 20px ;
+    height: 20vh;
+    width: 45vw;
+    gap: 5px;
+    /* flex-direction: column; */   
+}
+#check_status_main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    width: 70%;
+    /* margin-top: 23px ; */
+    gap: 20px;
+}
+#check_status_application_number,#check_status_aadhar_number,#check_status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+
+
+

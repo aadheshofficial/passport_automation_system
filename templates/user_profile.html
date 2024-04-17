@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <div id="user_profile_boby">
+        <div id="user_profile_content">
+            <div id="user_profile_main">
+                <h1>user profile</h1>
+                <div id="user_profile_image">
+                    <img id="user_profile_image_image" src="{{url_for('static', filename='images/profile_image_default.png')}}"/>
+                </div>
+                <div id="user_profile_name">
+                    <label>name:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_user_name">
+                    <label>user name:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_father_name">
+                    <label>father name:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_mather_name">
+                    <label>mother name:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_aadhar">
+                    <label>aadhar number:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_dob">
+                    <label>dob:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_phone">
+                    <label>phone:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_email">
+                    <label>email:</label>
+                    <input type="text"/>
+                </div>
+                <div id="user_profile_button">
+                    <input type="button" value="edit" />
+                    <a href="change_password_user_login.html">change password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

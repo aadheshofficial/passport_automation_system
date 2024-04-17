@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+    <div id="home_body">
+        <div id="home_content">
+            <div id="home_menu">
+                <div id="home_login_menu" >
+                    <a href="{{url_for('user_login')}}">login</a>
+                    <!-- <option value="register">register</option> -->
+                </div>
+                <a href="{{url_for('check_status')}}">status</a>
+            
+                <img id="home_profile_image" src="{{url_for('static', filename='images/profile_image_default.png')}}"/>
+            </div>
+            <div id="home_image">
+                <img src="{{url_for('static', filename='images/passport-seva-inner14-new.jpeg')}}"/>
+            </div>
+            <div id="home_main">
+                <div id="home_application">
+                    <h1>passport application</h1>
+                    <p>
+                        requirements:<br>
+                        -name<br>
+                        -phone(300kb)<br>
+                        -id proof(2mb)<br>
+                        -address<br>
+                        -phone<br>
+                        -email id<br>
+                        -pan card<br>
+                        -mark sheet(10th,12th)(3mb)<br>
+                        -voter id(3mb)<br>
+                        -dob<br>
+                        -father name<br>
+                        -mother name<br>
+                    </p>
+                </div>
+                <div id="home_how_to_apply">
+                    <h1>home how to apply</h1>
+                    <p>
+                        <a href="{{url_for('apply_passport')}}">1.apply for passport</a> <br>
+                        <a href="{{url_for('make_payment')}}">2.make payment</a><br>
+                        <a href="{{url_for('check_status')}}">3.police verification</a> <br>
+                        <a href="{{url_for('check_status')}}">4.get passport</a> <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("home_profile_image").addEventListener("click", function() {
+            // Redirect to the desired URL
+            window.location.href = "{{ url_for('user_profile') }}";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>status result</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div id="status_result_boby">
+        <div id="status_result_content">
+            <div id="status_result_main">
+                <div id="status_result_application_id">
+                    <label>application id:</label>
+                    <label>_________________</label>
+                </div> 
+                <div id="status_result_status">
+                    <label>status:</label>
+                    <label>passport generated</label>
+                </div>
+                <div id="status_result_button">
+                <a href="{{url_for('home')}}">back home</a>
+                    <input type="button" value="get passport" style="display:none;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
